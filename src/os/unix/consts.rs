@@ -69,6 +69,7 @@ mod posix {
 
             target_os = "macos",
             target_os = "ios",
+            target_os = "tvos",
             target_os = "watchos",
             target_os = "freebsd",
             target_os = "dragonfly",
@@ -104,6 +105,7 @@ mod posix {
 
             target_os = "macos",
             target_os = "ios",
+            target_os = "tvos",
             target_os = "watchos",
             target_os = "freebsd",
             target_os = "dragonfly",
@@ -149,6 +151,7 @@ mod posix {
         } else if #[cfg(any(
             target_os = "macos",
             target_os = "ios",
+            target_os = "tvos",
             target_os = "watchos",
         ))] {
             pub(super) const RTLD_GLOBAL: c_int = 8;
@@ -191,6 +194,7 @@ mod posix {
         } else if #[cfg(any(
             target_os = "macos",
             target_os = "ios",
+            target_os = "tvos",
             target_os = "watchos",
         ))] {
             pub(super) const RTLD_LOCAL: c_int = 4;
